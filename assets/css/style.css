@@ -1,0 +1,558 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    text-align: center;
+}
+
+body {
+    font-family: 'Iceland', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1.8em;
+}
+
+h2,
+h3 {
+   color: #fff;
+}
+
+h2,
+h3,
+h4 {
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: .4em;
+}
+
+ol,
+ul{
+    list-style: none;
+}
+
+img {
+    max-width: 300px;
+    padding-right: 1em;
+
+}
+
+figure {
+    margin: 0;
+    line-height: 0;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff;
+    width: 300px;
+}
+
+figcaption h2{
+    text-decoration: underline;
+}
+
+
+.img_container {
+    position: relative;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.img_container:hover .image {
+    opacity: 0.3;
+}
+
+.img_container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+}
+
+/* ---- About me ---- */
+
+.profile_pic{
+    width: 200px;
+    height: 100%;
+}
+
+.intro{
+    font-size: 1.8em;
+}
+
+.link{
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+}
+
+/* ---- Modal box ---- */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #555555;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ---- Layout containers ---- */
+
+
+.aida{
+    background: #555555;
+}
+
+.memo{
+    background: #555555;
+}
+
+.calc{
+    background: #1a1a1a;
+}
+
+.portfolio_div p,
+.portfolio_div h4{
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.hover_content p,
+.hover_content button,
+.hover_content span{
+    display: none;
+}
+
+.hover_content h4{
+    font-family: 'Baloo Bhaina', cursive;
+    padding-top: 40%;
+    font-size: 1.5em;
+}
+
+.portfolio_div:hover .hover_content h4{
+    padding-top: 5%;
+}
+
+.portfolio_div:hover .hover_content span{
+    text-decoration: underline;
+}
+
+.portfolio_div:hover .hover_content p,
+.portfolio_div:hover .hover_content button,
+.portfolio_div:hover .hover_content span{
+    display: block;
+}
+
+
+#portfolio{
+    margin-top: 100px;
+}
+
+/* ---- Navigation ---- */
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background: #1a1a1a;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    color: #929292;
+}
+
+.main-nav a {
+    font-size: .95em;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+
+
+/* ---- Contact form ---- */
+
+form {
+    min-width: 200px;
+    max-width: 350px;
+    margin: 10px auto;
+    padding: 10px 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #21252d;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+.number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+}
+
+form {
+    max-width: 480px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+    font-size: 21px;
+    margin: 0;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    color: #929292;
+}
+
+.main-nav a {
+    font-size: .95em;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: #fff;
+}
+/* ---- Layout Containers ---- */
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background: #1a1a1a;
+}
+
+
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.main-footer {
+    text-align: center;
+}
+
+.main-footer {
+    background: #1a1a1a;
+    padding: 2em 0;
+    margin-top: 30px;
+}
+
+.skills{
+    margin-top: 50px;
+}
+
+.skills h3{
+    margin-top: 50px;
+}
+
+.skills ul li{
+    list-style-type: disc;
+}
+
+.skills ul li li{
+    list-style-type: circle;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (max-width: 769px) {
+
+    .portfolio_div {
+        width: 100%;
+        height: 350px;
+        display: block;
+    }
+
+    img {
+        max-width: 90%;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    figure {
+        position: relative;
+        margin-bottom: 200px;
+        margin-top: 20px;
+    }
+
+    figcaption {
+        position: absolute;
+        bottom: -180px;
+        width: 90%;
+    }
+
+    .skills ul li{
+        list-style-type: disc;
+    }
+
+    .skills ul li li{
+        list-style-type: circle;
+    }
+
+    .skills h3,
+    .skills ul,
+    .skills li{
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    /* ---- General ---- */
+
+    body{
+        padding-top: 150px;
+    }
+
+    .skills h3,
+    .skills ul,
+    .skills li{
+        text-align: left;
+    }
+
+    /* ---- Layout Containers ---- */
+
+    .portfolio_div {
+        width: 33.3%;
+        height: 350px;
+        display: table;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .name,
+    .col {
+        float: left;
+    }
+
+    .primary,
+    .secondary{
+        width: 50%;
+    }
+
+    .secondary{
+        float: right;
+    }
+
+    .tertiary{
+        clear: both;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .tagline {
+        font-size: 1.4em;
+    }
+
+    .main-header{
+        position: fixed;
+        background: #1a1a1a;
+        box-shadow: 0 1px 4px rgba(0,0,0,.4);
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* ---- Other ---- */
+
+    .profile_pic{
+        float: left;
+    }
+
+    .skills{
+        clear: both;
+        float: left;
+    }
+
+
+    /* ---- Float clearfix ---- */
+
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+}
+
+@media (min-width: 1025px) {
+
+    .container {
+        width: 80%;
+        max-width: 1150px;
+    }
+
+    .col {
+        float: left;
+    }
+
+    .tertiary{
+        clear: none;
+    }
+
+    .primary,
+    .secondary,
+    .tertiary {
+        width: 33.3%;
+    }
+
+}

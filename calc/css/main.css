@@ -1,0 +1,69 @@
+body{
+    font-family: sans-serif;
+    background-color: #b5b5b5;
+}
+
+.main_wrapper{
+    margin-top: 50px;
+}
+
+.calc{
+    margin: auto;
+    width: 30%;
+    min-width: 305px;
+    max-width: 425px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#problem{
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    background-color: #bdbdbd;
+    color: #606060;
+    font-family: "Courier 10 Pitch", sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    border-style: none;
+    user-focus: transparent;
+    outline: none;
+    overflow: hidden;
+}
+
+#solution{
+    margin: 0;
+    height: 40px;
+    width: 100%;
+    text-align: right;
+    background-color: #bdbdbd;
+    color: #606060;
+    font-family: "Courier 10 Pitch", sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    border-style: none;
+    user-focus: transparent;
+    outline: none;
+    overflow: hidden;
+}
+
+/*Button Field Input*/
+
+.button-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-row input{
+    width: 25%;
+    height: 80px;
+    font-size: 30px;
+}
+
+.button-field {
+    display: flex;
+    flex-direction: column;
+}

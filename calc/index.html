@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator | jQuery</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+</head>
+<body>
+    <div class="main_wrapper">
+        <div class="calc">
+            <section class="text-input-field">
+                <div id="problem"></div>
+                <div id="solution"></div>
+            </section>
+
+            <section class="button-field">
+                <div class="button-row">
+                    <input id="clear" style="color: #FF5039" type="button" value="C">
+                    <input id="backspace" type="button" value="&#8678;">
+                    <input id="bracket" style="color: #4E48FF" type="button" value="&#40;&#41;">
+                    <input id="divide" style="color: #4E48FF" type="button" value="&#247;">
+                </div>
+                <div class="button-row">
+                    <input id="seven" style="color: #3b3e41" type="button" value="7">
+                    <input id="eight" style="color: #3b3e41" type="button" value="8">
+                    <input id="nine" style="color: #3b3e41" type="button" value="9">
+                    <input id="multiply" style="color: #4E48FF" type="button" value="x">
+                </div>
+                <div class="button-row">
+                    <input id="four" style="color: #3b3e41" type="button" value="4">
+                    <input id="five" style="color: #3b3e41" type="button" value="5">
+                    <input id="six" style="color: #3b3e41" type="button" value="6">
+                    <input id="minus" style="color: #4E48FF" type="button" value="&#45;">
+                </div>
+                <div class="button-row">
+                    <input id="one" style="color: #3b3e41" type="button" value="1">
+                    <input id="two" style="color: #3b3e41" type="button" value="2">
+                    <input id="three" style="color: #3b3e41" type="button" value="3">
+                    <input id="plus" style="color: #4E48FF" type="button" value="&#43;">
+                </div>
+                <div class="button-row">
+                    <input id="answer" style="color: #3b3e41" type="button" value="ans">
+                    <input id="zero" style="color: #3b3e41" type="button" value="0">
+                    <input id="dot" style="color: #3b3e41" type="button" value=".">
+                    <input style="background-color: #4E48FF; color: #fff" id="equals" type="button" value="=">
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/calc.js"></script>
+</body>
+</html>

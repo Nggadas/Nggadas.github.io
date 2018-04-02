@@ -1,0 +1,51 @@
+body{
+    font-family: sans-serif;
+    background-color: #b5b5b5;
+}
+
+.calc{
+    margin: auto;
+    width: 40%;
+    max-width: 450px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#screen{
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    text-align: right;
+    background-color: #e7e7e7;
+    color: #606060;
+    font-family: "Courier 10 Pitch", sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    border-style: none;
+    user-focus: transparent;
+    outline: none;
+}
+
+.main_wrapper{
+    margin-top: 10px;
+}
+
+/*Button Field Input*/
+
+.button-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-row input{
+    width: 25%;
+    height: 80px;
+    font-size: 30px;
+}
+
+.button-field {
+    display: flex;
+    flex-direction: column;
+}
