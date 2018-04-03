@@ -19,10 +19,6 @@ if(isset($_POST['submit'])){
         $message = $_POST["message"];
         $body = "<strong>Name:</strong>" . $user_name . "<br> <strong>Email:</strong> " . $user_email . "<br><br>" . $message;
 
-        //ENV Variables
-        $env_email = getenv('EMAIL');
-        $env_password = getenv('PASSWORD');
-
         //Load Composer's autoloader
         require 'vendor/autoload.php';
 
@@ -33,11 +29,10 @@ if(isset($_POST['submit'])){
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = $env_email;            // SMTP username
-            $mail->Password = $env_password;         // SMTP password
+            $mail->Username = getenv('SMTP_EMAIL');            // SMTP username
+            $mail->Password = getenv('SMTP_PASSWORD');         // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
-
 
             //Recipients
             $mail->setFrom($user_email, $user_name);
@@ -60,7 +55,6 @@ if(isset($_POST['submit'])){
 
         } catch (Exception $e) {
 //            echo "<script>alert('Something went wrong with the email. Why not email me directly at enggadas80@gmail.com');</script>";
-            echo '<script>alert(' . $e . ') </script>';
 //            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo; $mail->ErrorInfo
         }
     }
