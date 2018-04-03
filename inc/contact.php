@@ -25,19 +25,19 @@ if(isset($_POST['submit'])){
         $mail = new PHPMailer(true);                    // Passing `true` enables exceptions
         try {
             //Server settings
-            $mail->SMTPDebug = 1;                               // Enable verbose debug output
+//            $mail->SMTPDebug = 1;                               // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = getenv('SMTP_EMAIL');            // SMTP username
-            $mail->Password = getenv('SMTP_PASSWORD');         // SMTP password
+            $mail->Username = "enggadas90@gmail.com";            // SMTP username
+            $mail->Password = "Chararas90";                         // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
 
             //Recipients
             $mail->setFrom($user_email, $user_name);
 
-            $mail->addAddress("enggadas80@gmail.com", 'Emmanuel Nggadas');     // Add a recipient
+            $mail->addAddress("enggadas90@gmail.com", 'Emmanuel Nggadas');     // Add a recipient
             $mail->addReplyTo($user_email, $user_name);
 
             //    $mail->addReplyTo('info@example.com', 'Information');
@@ -54,8 +54,7 @@ if(isset($_POST['submit'])){
             echo "<script>alert('Thanks for your email, I will get back to you as soon as possible.');</script>";
 
         } catch (Exception $e) {
-//            echo "<script>alert('Something went wrong with the email. Why not email me directly at enggadas80@gmail.com');</script>";
-//            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo; $mail->ErrorInfo
+            echo "<script>alert('Something went wrong with the email. Why not email me directly at enggadas80@gmail.com');</script>";
         }
     }
 }
