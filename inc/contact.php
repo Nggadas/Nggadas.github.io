@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
             echo "<script>alert('Thanks for your email, I will get back to you as soon as possible.');</script>";
 
         } catch (Exception $e) {
-            echo "<script>alert('Something went wrong with the email. <br> Why not email me directly at enggadas80@gmail.com');</script>";
+//            echo "<script>alert('Something went wrong with the email. Why not email me directly at enggadas80@gmail.com');</script>";
             echo '<script>alert(' . $mail->ErrorInfo . ')</script>';
 //            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
         }
