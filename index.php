@@ -38,6 +38,7 @@
 
     <footer class="main-footer">
         <div>
+            <a href="https://github.com/Nggadas" target="_blank"><img class="link" src="assets/images/github.png" alt=""></a>
             <a href="https://www.linkedin.com/in/emmanuel-nggadas-381841b8/" target="_blank"><img class="link" src="assets/images/linkedin.png" alt=""></a>
             <a href="https://www.facebook.com/emmanuel.nggadas" target="_blank"><img class="link" src="assets/images/facebook.png" alt=""></a>
         </div>

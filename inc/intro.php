@@ -5,7 +5,7 @@
         <img src="assets/images/web_design.jpg" alt="Vector" class="image" >
         <figcaption>
             <h2>Web Design</h2>
-            I create layouts of what a website should look like, this allows space for creativity. I usually work with moqups to achieve this.
+            I create layouts of what a website should look like, this allows room for creativity. I usually work with moqups to achieve this.
         </figcaption>
     </figure>
 </div>
