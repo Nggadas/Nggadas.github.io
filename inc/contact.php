@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
         $mail = new PHPMailer(true);                    // Passing `true` enables exceptions
         try {
             //Server settings
-//        $mail->SMTPDebug = 2;                               // Enable verbose debug output
+            $mail->SMTPDebug = 2;                               // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -56,8 +56,8 @@ if(isset($_POST['submit'])){
 
         } catch (Exception $e) {
 //            echo "<script>alert('Something went wrong with the email. Why not email me directly at enggadas80@gmail.com');</script>";
-            echo '<script>alert(' . $mail->ErrorInfo . ')</script>';
-//            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+            echo '<script>alert(' . $e . ') </script>';
+//            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo; $mail->ErrorInfo
         }
     }
 }
