@@ -25,14 +25,14 @@ if(isset($_POST['submit'])){
         $mail = new PHPMailer(true);                    // Passing `true` enables exceptions
         try {
             //Server settings
-//            $mail->SMTPDebug = 1;                               // Enable verbose debug output
+            $mail->SMTPDebug = 1;                               // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+            $mail->Host = 'smtp.gmail.com';                    // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = "enggadas90@gmail.com";             // SMTP username
-            $mail->Password = "Chararas900";                       // SMTP password
-            $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-            $mail->Port = 465;                                    // TCP port to connect to
+            $mail->Password = "Chararas5128";                       // SMTP password
+            $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 587;                                    // TCP port to connect to
 
             //Recipients
             $mail->setFrom($user_email, $user_name);
