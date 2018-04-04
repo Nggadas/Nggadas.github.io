@@ -2,7 +2,7 @@
 <img class="profile_pic" src="../assets/images/profile_pic.jpg" alt="profile picture">
 <p>I am a recent graduate of Leeds Beckett university where I studied and got a bachelors degree in Computing.
     During the course of my time there, I gained some knowledge and skills in web development and desktop
-    app development as well as networking, systems modelling and computer security. I pride myself on my wiliness
+    app development as well as networking, systems modelling and computer security. I pride myself on my determination
     to do my best possible on every project I take.</p>
 
 <!--Skills-->
