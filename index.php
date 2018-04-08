@@ -45,6 +45,7 @@
         <span>&copy;2018 Emmanuel Nggadas.</span>
     </footer>
     <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/jquery.js"></script>
 </body>
 </html>
