@@ -1,10 +1,10 @@
 function aidaModal() {
 
     // Get the modal
-    var aida_modal = document.getElementById('aida-modal');
+    let aida_modal = document.getElementById('aida-modal');
 
     // Get the <span> element that closes the modal
-    var span = document.getElementById("aida-close");
+    let span = document.getElementById("aida-close");
 
     openModal();
 
@@ -29,10 +29,10 @@ function aidaModal() {
 function memoModal() {
 
     // Get the modal
-    var memo_modal = document.getElementById('memo-modal');
+    let memo_modal = document.getElementById('memo-modal');
 
     // Get the <span> element that closes the modal
-    var span = document.getElementById("memo-close");
+    let span = document.getElementById("memo-close");
 
     openModal();
 
@@ -57,10 +57,10 @@ function memoModal() {
 function calcModal() {
 
     // Get the modal
-    var calc_modal = document.getElementById('calc-modal');
+    let calc_modal = document.getElementById('calc-modal');
 
     // Get the <span> element that closes the modal
-    var span = document.getElementById("calc-close");
+    let span = document.getElementById("calc-close");
 
     openModal();
 
